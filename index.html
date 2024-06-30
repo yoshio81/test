@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>近くのお店検索</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="content">
+        <div id="map"></div>
+        <div id="sidebar">
+            <button id="findStores">お店を探す</button>
+            <div id="searchOptions">
+                <label><input type="checkbox" value="cafe">カフェ</label>
+                <label><input type="checkbox" value="fast_food">ファーストフード</label>
+                <label><input type="checkbox" value="convenience_store">コンビニ</label>
+            </div>
+            <div id="radiusSlider">
+                <label for="radius">検索範囲 (m): <span id="radiusValue">500</span></label>
+                <input type="range" id="radius" name="radius" min="100" max="2000" step="100" value="500">
+            </div>
+            <div id="legend">
+                <h3>凡例</h3>
+                <div class="legend-item">
+                    <img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png" alt="Red Pin" class="legend-icon">
+                    <span>カフェ</span>
+                </div>
+                <div class="legend-item">
+                    <img src="http://maps.google.com/mapfiles/ms/icons/yellow-dot.png" alt="Yellow Pin" class="legend-icon">
+                    <span>ファーストフード</span>
+                </div>
+                <div class="legend-item">
+                    <img src="http://maps.google.com/mapfiles/ms/icons/purple-dot.png" alt="Purple Pin" class="legend-icon">
+                    <span>コンビニ</span>
+                </div>
+            </div>
+            <div id="loading" style="display:none;">ローディング中...</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxHwdfszBGuKXios98O1NE_DemJEhvKzo&libraries=places"></script>
+</body>
+</html>

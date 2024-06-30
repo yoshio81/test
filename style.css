@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#content {
+    display: flex;
+    height: 100%;
+}
+
+#map {
+    flex: 1;
+}
+
+#sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+#findStores {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px #388E3C;
+}
+
+#findStores:hover {
+    background-color: #45a049;
+}
+
+#findStores:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(2px);
+}
+
+#loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.gm-style-iw {
+    max-width: 300px !important;
+}
+
+.gm-style-iw img {
+    max-width: 100%;
+    height: auto;
+}
+
+#searchOptions {
+    margin-bottom: 20px;
+}
+
+#searchOptions label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#legend {
+    margin-bottom: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.legend-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
